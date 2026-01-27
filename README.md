@@ -1,6 +1,5 @@
 # tech-storybook
-Storybookについて検証する
-React 向け Storybook のチュートリアル: https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/
+[Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)について検証する
 
 ## インストール
 Next.js
