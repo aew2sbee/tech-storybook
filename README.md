@@ -1,5 +1,5 @@
 # tech-storybook
-[Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)について検証する
+Next.js + Tailwind CSS + [Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)について検証する
 
 ## インストール
 Next.js
