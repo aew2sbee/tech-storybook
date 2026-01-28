@@ -1,31 +1,35 @@
 import * as React from "react";
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary";
+  color?: "primary" | "secondary";
   size?: "small" | "medium" | "large";
 };
 
-const variantMap = {
-  primary: "btn-primary",
-  secondary: "btn-secondary",
+const BASE = "inline-flex items-center justify-center gap-2 rounded-full font-bold leading-none transition select-none";
+
+const colorMap = {
+  primary: "bg-sky-400 text-white hover:bg-sky-500 active:bg-sky-600",
+  secondary: "border border-slate-300 bg-white text-slate-900 hover:bg-slate-50 active:bg-slate-100",
 } as const;
 
 const sizeMap = {
-  small: "btn-small",
-  medium: "btn-medium",
-  large: "btn-large",
+  small: "h-8 px-4 text-xs",
+  medium: "h-10 px-5 text-sm",
+  large: "h-12 px-6 text-base",
 } as const;
 
 export function Button({
-  variant = "primary",
+  color = "primary",
   size = "medium",
+  type = "button",
   className = "",
   children,
   ...props
 }: ButtonProps) {
   return (
     <button
-      className={`btn ${variantMap[variant]} ${sizeMap[size]} ${className}`}
+      type={type}
+      className={`${BASE} ${colorMap[color]} ${sizeMap[size]} ${className}`}
       {...props}
     >
       {children}
