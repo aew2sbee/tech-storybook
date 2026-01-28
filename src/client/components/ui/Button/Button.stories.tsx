@@ -3,7 +3,7 @@ import { fn } from 'storybook/test';
 import { Button } from '.';
 
 const meta = {
-  title: "Sample/Button",
+  title: "UI/Button",
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -23,27 +23,33 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: "primary",
-    children: "保存",
+    children: "ボタン",
   },
 };
 
 export const Secondary: Story = {
   args: {
     variant: "secondary",
-    children: "保存",
+    children: "ボタン",
   },
 };
 
 export const Large: Story = {
   args: {
     size: "large",
-    children: "保存",
+    children: "ボタン",
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    children: "ボタン",
   },
 };
 
 export const Small: Story = {
   args: {
     size: "small",
-    children: "保存",
+    children: "ボタン",
   },
 };
