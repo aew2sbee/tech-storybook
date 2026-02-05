@@ -1,9 +1,9 @@
-# tech-storybook
+# poc-storybook
 Next.js + Tailwind CSS + [Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)について検証する
 
 ## GitHub Pages
-- 本番環境: https://aew2sbee.github.io/tech-storybook
-- 開発環境: https://aew2sbee.github.io/tech-storybook/develop
+- 本番環境: https://aew2sbee.github.io/poc-storybook
+- 開発環境: https://aew2sbee.github.io/poc-storybook/develop
 
 ## インストール
 Next.js
